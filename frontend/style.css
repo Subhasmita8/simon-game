@@ -1,0 +1,107 @@
+/* Added a better background and font styling for a more unique look */
+body {
+    text-align: center;
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+}
+
+/* Added spacing and soft board styling */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+/* Kept your same layout */
+.line-one,
+.line-two {
+    display: flex;
+}
+
+/* Added glow, shadow, alignment, and pointer for better UI */
+.btn {
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 10px solid black;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+     box-shadow: 0 0 20px rgba(255, 255, 255, 0.15); /* **0 (no horizontal shift), 0 (no vertical shift), 20px (blur), rgba(255,255,255,0.15) (light white color).** */
+    transition: all 0.2s ease;
+}
+
+/* Added hover effect to make buttons feel interactive */
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.red {
+    background-color: #e63946;
+}
+
+.yellow {
+    background-color: #f4a261;
+}
+
+.green {
+    background-color: #2a9d8f;
+}
+
+.purple {
+    background-color: #7b2cbf;
+}
+
+/* Kept flash effect, but made it brighter */
+.flash {
+    background-color: white !important;  /*  **`!important` → forces this style to override all other conflicting CSS rules.** */
+     box-shadow: 0 0 30px white; /* Adds a bright white flash effect with a strong glow (30px shadow) around the element. */
+}
+
+/* Improved user click feedback */
+.userflash {
+    background-color: cornflowerblue !important;
+    box-shadow: 0 0 30px cornflowerblue;
+}
+
+/* Added heading styling for a cleaner look */
+h1 {
+    margin-top: 30px;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #e2e8f0;
+}
+
+/* Added simple responsiveness so it works better on smaller screens */
+@media (max-width: 500px) {
+    .btn {
+        height: 130px;
+        width: 130px;
+        margin: 0.7rem;
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+}
