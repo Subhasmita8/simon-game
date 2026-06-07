@@ -88,6 +88,31 @@ h2 {
     color: #e2e8f0;
 }
 
+/* Added a start button for all devices */
+#start-btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    background-color: white;
+    color: #0f172a;
+    cursor: pointer;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.25);
+    transition: all 0.2s ease;
+}
+
+/* Added hover effect for laptop users */
+#start-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Added pressed effect for touch and click feedback */
+#start-btn:active {
+    transform: scale(0.98);
+}
+
 /* Added simple responsiveness so it works better on smaller screens */
 @media (max-width: 500px) {
     .btn {
@@ -103,5 +128,9 @@ h2 {
 
     h2 {
         font-size: 1rem;
+    }
+    #start-btn {
+        font-size: 0.95rem;
+        padding: 10px 18px;
     }
 }
