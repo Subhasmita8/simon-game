@@ -30,13 +30,10 @@ Test your memory by repeating the sequence of colors as it gets longer and more 
 ---
 
 ## 📂 Project Structure
-/simon-game
-/frontend
-├── index.html
-├── style.css
-
-/backend
-├── app.js
+//frontend
+   index.html
+   style.css
+   app.js
 
 README.md
 ---
